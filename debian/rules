@@ -13,6 +13,12 @@ else
 	cross := CC=$(DEB_HOST_GNU_TYPE)-gcc
 endif
 
+# XXX: skip tests on sw64
+ifeq ($(DEB_HOST_ARCH), sw64)
+override_dh_auto_test:
+	:
+endif
+
 override_dh_auto_build:
 	dh_auto_build -- prefix=/usr sysconfdir=/etc $(cross)
 override_dh_auto_install:
