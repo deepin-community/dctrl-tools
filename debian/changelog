@@ -1,3 +1,9 @@
+dctrl-tools (2.24-deepin2) unstable; urgency=medium
+
+  * feat: add sw64 support.
+
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 29 May 2025 11:50:52 +0800
+
 dctrl-tools (2.24-deepin1) unstable; urgency=medium
 
   * Rebuild
